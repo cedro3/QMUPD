@@ -31,7 +31,7 @@ def display_pic(folder):
            continue
         img = Image.open(folder+'/'+file)    
         images = np.asarray(img)
-        ax = fig.add_subplot(10, 5, i+1, xticks=[], yticks=[])
+        ax = fig.add_subplot(10, 6, i+1, xticks=[], yticks=[])
         image_plt = np.array(images)
         ax.imshow(image_plt)
         #name = os.path.splitext(file)
